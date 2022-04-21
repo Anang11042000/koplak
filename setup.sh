@@ -10,7 +10,7 @@ fi
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-MYIP=$(wget -qO- icanhazip.com);
+*/MYIP=$(wget -qO- icanhazip.com);
 IZIN=$( curl icanhazip.com | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
@@ -19,7 +19,7 @@ echo -e "${red}Permission Denied!${NC}";
 echo "Please Contact Admin"
 echo "Telegram t.me/celengssh"
 echo "WA 085747479082"
-rm -f setup.sh
+rm -f setup.sh/*
 exit 0
 fi
 if [ -f "/etc/v2ray/domain" ]; then
